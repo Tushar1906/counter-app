@@ -104,7 +104,7 @@ export class CounterApp extends DDDSuper(I18NMixin(LitElement)) {
     if (super.updated) {
       super.updated(changedProperties);
     }
-    if (changedProperties.has('counter')) {
+    if (changedProperties.has('count')) {
       if (this.count === 21) {
         this.makeItRain();
       }
